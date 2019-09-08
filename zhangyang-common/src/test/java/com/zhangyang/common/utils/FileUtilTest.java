@@ -10,20 +10,23 @@ public class FileUtilTest {
 
 	@Test
 	public void testGetExtendName() {
-		String str = "test.jsp";
-		String string = FileUtil.getExtendName(str);
-		System.out.println(string);
+		String file="abc.doc";
+		String name = FileUtil.getExtendName(file);
+		System.out.println(name);
 	}
 
 	@Test
 	public void testGetTempDirectory() {
-		File file = FileUtil.getTempDirectory();
-		 System.out.println(file);
+	  File file = FileUtil.getTempDirectory();
+	  System.out.println(file);
 	}
 
 	@Test
 	public void testGetUserDirectory() {
-		fail("Not yet implemented");
+		
+		  File file = FileUtil.getUserDirectory();
+		  System.out.println(file);
+		
 	}
 
 }
